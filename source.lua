@@ -3,8 +3,13 @@ include camera.lua
 include collision.lua
 include printer.lua
 
---advanced micro platformer
+--this is a combimation of:
+--"advanced micro platformer" by
 --@matthughson
+--https://www.lexaloffle.com/bbs/?tid=28793
+--and
+--https://github.com/jayminer81/pico8_project_template
+--plus some minimal graphics to pull it together
 
 --if you make a game with this
 --starter kit, please consider
@@ -13,6 +18,8 @@ include printer.lua
 --can learn from it too!
 --enjoy! 
 --@matthughson
+
+--please also consider linking to this repo
                 
 --log
 printh("\n\n-------\n-start-\n-------")
