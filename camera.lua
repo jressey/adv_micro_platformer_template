@@ -14,7 +14,7 @@ function m_cam(target)
       --min and max positions of camera.
       --the edges of the level.
       pos_min=m_vec(64,64),
-      pos_max=m_vec(320,64),
+      pos_max=m_vec(320,240),
         
       shake_remaining=0,
       shake_force=0,
@@ -84,18 +84,7 @@ function m_vec(x,y)
   local v=
   {
     x=x,
-    y=y,
-
-    --get the length of the vector
-    get_length=function(self)
-      return sqrt(self.x^2+self.y^2)
-    end,
-
---get the normal of the vector
-    get_norm=function(self)
-      local l = self:get_length()
-      return m_vec(self.x / l, self.y / l),l;
-    end,
-               }
+    y=y
+  }
   return v
 end
