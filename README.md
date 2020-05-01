@@ -1,11 +1,15 @@
 # Pico-8 Project Template
 
+This is a marriage of a [jayminer81's project template](https://github.com/jayminer81/pico8_project_template) and [@matthughson's Advanced microplatformer example cart](https://www.lexaloffle.com/bbs/?tid=28793)
+
 #### To run this project
 - Clone repo
 - run `make output`
 - open `output.p8` in pico-8
 
 ## About
+
+### Template
 
 This is an empty Pico-8 project template but with scripts allowing you to separate graphics, music and code and also split the code into multiple files while working on your project.
 
@@ -19,5 +23,9 @@ The parse.py-script can optimize the output to remove comments and indentation t
 
 For now it's not possible to include files from within a file that is getting included, perhaps this will be added in the future.
 
-### Graphics and Sound
+### Features
+
+This starter template contains all of the features listed in the Advanced Microplatform Template by @matthughson. The thread is here: https://www.lexaloffle.com/bbs/?tid=28793
+
+### Note on Graphics and Sound
 **Remember to paste your output.p8 graphics and sound section over the text in `gfxsfx.p8` or your changes will be overwritten!**
