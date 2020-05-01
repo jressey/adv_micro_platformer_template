@@ -1,7 +1,7 @@
 # Pico-8 Project Template
 
 #### To run this project
-- Checkout
+- Clone repo
 - run `make output`
 - open `output.p8` in pico-8
 
