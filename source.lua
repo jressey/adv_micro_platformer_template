@@ -1,7 +1,3 @@
-include player.lua
-include camera.lua
-include collision.lua
-include printer.lua
 
 --this is a combimation of:
 --"advanced micro platformer" by
@@ -20,7 +16,12 @@ include printer.lua
 --@matthughson
 
 --please also consider linking to this repo
-                
+
+include player.lua
+include camera.lua
+include collision.lua
+include printer.lua
+
 --log
 printh("\n\n-------\n-start-\n-------")
 
@@ -33,7 +34,7 @@ snd=
 --music tracks
 mus=
 {
-
+  bgm=0 
 }
 
 --game flow
@@ -47,6 +48,8 @@ function reset()
     p1=m_player(64,100)
     p1:set_anim("walk")
     cam=m_cam(p1)
+    -- uncomment to enable music
+    -- music(mus.bgm,300)
 end
 
 --p8 functions
@@ -65,13 +68,11 @@ function _update60()
 end
 
 function _draw()
-
     cls(0)
     camera(cam:cam_pos())
     map(0,0,0,0,128,128)
     p1:draw()
     --hud
     camera(0,0)
-    printc("adv. micro platformer",64,4,7,0,0)
-
+    printc("adv. micro platformer template",64,4,7,0,0)
 end

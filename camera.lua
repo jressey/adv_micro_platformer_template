@@ -96,6 +96,6 @@ function m_vec(x,y)
       local l = self:get_length()
       return m_vec(self.x / l, self.y / l),l;
     end,
-  }
+               }
   return v
 end

@@ -79,8 +79,8 @@ function m_player(x,y)
         },
         ["slide"]=
         {
-            ticks=1,
-            frames={7},
+            ticks=11,
+            frames={7,8},
         },
     },
 
